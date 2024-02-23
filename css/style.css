@@ -1,0 +1,179 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+/* THE BUG */
+/* body {
+    background-color: aqua;
+} */
+
+/* HEADER */
+.header {
+    background-color: #ADD8E6;
+    /* THE BUG */
+    height: 40px;
+    padding: 5px 20px;
+
+    /* align-items: center;
+    justify-content: center;
+    text-align: center;
+    è bastato mettere MARGIN 0 AUTO che ha centrato tutto*/
+}
+
+.nav-container {
+    display: flex;
+    background-color: #DAA520;
+    /* THE BUG */
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    /* è bastato mettere MARGIN 0 AUTO che ha centrato tutto */
+}
+
+header>.logo-nav>.link-nav>.login-nav {
+    border-style: dotted;
+    font-size: 5px;
+    padding: 5px;
+}
+
+.logo-nav,
+.login-nav {
+    /* THE BUG */
+    width: 50px;
+    /* FINE THE BUG */
+    border-style: dotted;
+}
+
+.link-nav {
+    border-style: dotted;
+    /* THE BUG */
+    width: 200px;
+}
+
+/* AND HEADER */
+
+/* CANTAINER ROSA */
+.wrapper-pinkk {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* THE BUG */
+    background-color: rgb(22, 22, 108);
+    height: 100px;
+}
+
+.container-pinkk {
+    /* THE BUG */
+    width: 220px;
+    height: 80px;
+    background-color: #EE82EE;
+}
+
+/* FINE CANTAINER ROSA */
+
+/* <!-- CONTAINER A 2 BLOCCHI SFONDO BIANCO +BLU --> */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* THE BUG */
+    min-height: 200px;
+    /* padding: 50px 0;--> NEL CASO NON AVESSI MESSO MIN-HEIGHT */
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.container-pink {
+    /* THE BUG */
+    background-color: #FFC0CB;
+    width: 100px;
+    height: 100px;
+    border-style: dotted;
+}
+
+.container-blue {
+    /* THE BUG */
+    width: 200px;
+    background-color: #ADD8E6;
+    height: 100px;
+    border-style: dotted;
+}
+
+/* <!-- CONTAINER A 2 BLOCCHI SFONDO GRIGIO --> */
+
+.blockrgray {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* THE BUG */
+    min-height: 200px;
+    /* THE BUG */
+    background-color: gray;
+}
+
+.revs{
+    flex-direction: row-reverse; 
+}
+
+/* <!-- CONTENITORE VERDE CON SFONDO GRIGIO --> */
+
+/* .wrappergray{
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* THE BUG */
+    /* height: 100px; */
+/* } */
+
+.container-green {
+    /* THE BUG */
+    width: 220px;
+    min-height: 150px;
+    background-color: #196607;
+}
+
+/* FOOTER  TOP*/
+.footer-top,.footer-bottom{
+    background-color: black;
+    padding: 5px 0;
+    margin-bottom: 2px;
+}
+.f-pink{
+    width: 100px;
+    background-color: #FFC0CB;
+    min-height: 100px;
+    border-style: dotted;
+}
+.f-blu{
+    width: 50px;
+    background-color: #ADD8E6;
+    min-height: 100px;
+    border-style: dotted;
+    /* gap: 1px; ??*/
+}
+/* FOOTER  BOTTOM*/
+.lightgreen{
+background-color: aquamarine;
+width: 300px;
+justify-content: space-between;
+padding: 10px 0;
+}
+
+
+.f-logo, .f-buttom{
+    width: 50px;
+    /* FINE THE BUG */
+    border-style: dotted;
+    background-color: #FFC0CB;
+}
