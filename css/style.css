@@ -3,43 +3,80 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
-img{
+body {
+    font-size: 14px;
+    font-family: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+img {
     max-width: 100%;
 }
-/* THE BUG */
-/* body {
-    background-color: aqua;
-} */
 
 /* HEADER */
-.header {
-    background-color: #ADD8E6;
-    /* THE BUG */
-    height: 40px;
-    padding: 5px 20px;
+header {
+    display: flex;
+    align-items: center;
+    min-height: 10px;
+    line-height: 20px;
+    background-color: #255EE9;
+}
 
-    /* align-items: center;
+/* THE BUG */
+/*  padding: 5px 20px; */
+
+/* align-items: center;
     justify-content: center;
     text-align: center;
     è bastato mettere MARGIN 0 AUTO che ha centrato tutto*/
+.logo-hed,
+.button-hed {
+    width: 20%;
 }
 
-.nav-container {
+.menu-hed ul {
     display: flex;
-    background-color: #DAA520;
-    /* THE BUG */
-    width: 300px;
-    text-align: center;
-    margin: 0 auto;
-    /* è bastato mettere MARGIN 0 AUTO che ha centrato tutto */
+    justify-content: center;
+    gap: 10px;
 }
 
-header>.logo-nav>.link-nav>.login-nav {
+ul {
+    list-style-type: none;
+}
+
+.menu-hed {
+    flex-grow: 1;
+    line-height: 30px;
+}
+
+
+
+header .container>* {
+    border: 2px solid darkblue;
+}
+
+
+/* .nav .container {
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto; */
+/* è bastato mettere MARGIN 0 AUTO che ha centrato tutto */
+
+/* display: flex;
+    background-color: #DAA520; */
+/* THE BUG */
+/* width: 70%;
+    text-align: center; */
+
+
+header>.logo-hed>.link-nav>.login-nav {
     border-style: dotted;
     font-size: 5px;
     padding: 5px;
+
 }
 
 .logo-nav,
@@ -53,39 +90,109 @@ header>.logo-nav>.link-nav>.login-nav {
 .link-nav {
     border-style: dotted;
     /* THE BUG */
-    width: 200px;
+    /* width: 200px; */
+}
+
+.wht,
+li>a {
+    color: inherit;
+    text-decoration: none;
+    color: white;
+}
+
+.button-hed {
+    text-align: right;
+
+}
+
+.bt-hed {
+    background-color: white;
+    color: #255EE9;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+/* COMMON */
+.container {
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+    /* THE BUG */
+    /* min-height: 10px; */
+    border: 2px dashed black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 10px;
+}
+
+/* padding: 50px 0;--> NEL CASO NON AVESSI MESSO MIN-HEIGHT */
+
+.flex-container {
+    display: flex;
 }
 
 /* AND HEADER */
 
-/* CANTAINER ROSA */
-.wrapper-pinkk {
+/* HERO O JUMPTRON*/
+.hero {
+    background-image: url(../img/jumbo.png);
     display: flex;
     align-items: center;
     justify-content: center;
-    /* THE BUG */
-    background-color: rgb(22, 22, 108);
-    height: 100px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 200px 20px 10px 20px;
+    min-width: 200px;
+
 }
 
-.container-pinkk {
+.hr-nav {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
     /* THE BUG */
-    width: 220px;
-    height: 80px;
-    background-color: #EE82EE;
+    /* min-height: 100px; */
+    width: 50%;
+    /* margin: 100px 20px 0 20px; */
 }
+
+h1,
+.p-nav {
+    color: white;
+    margin-bottom: 6px;
+}
+
+.b-herwht, .b-sfblack{
+    color: inherit;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 3px;
+}
+
+
+.b-sfblack{
+    background-color: black;
+    color: white;
+}
+.b-herwht{
+    background-color: white;
+    color: black;
+    
+}
+/* .container-pinkk {
+    
+    width: 50%;
+    min-height: 100px;
+    margin: 600px 40px;
+} */
 
 /* FINE CANTAINER ROSA */
 
 /* <!-- CONTAINER A 2 BLOCCHI SFONDO BIANCO +BLU --> */
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* THE BUG */
-    min-height: 200px;
-    /* padding: 50px 0;--> NEL CASO NON AVESSI MESSO MIN-HEIGHT */
-}
+
 
 .wrapper {
     display: flex;
@@ -122,8 +229,8 @@ header>.logo-nav>.link-nav>.login-nav {
     background-color: gray;
 }
 
-.revs{
-    flex-direction: row-reverse; 
+.revs {
+    flex-direction: row-reverse;
 }
 
 /* <!-- CONTENITORE VERDE CON SFONDO GRIGIO --> */
@@ -132,8 +239,8 @@ header>.logo-nav>.link-nav>.login-nav {
     display: flex;
     align-items: center;
     justify-content: center; */
-    /* THE BUG */
-    /* height: 100px; */
+/* THE BUG */
+/* height: 100px; */
 /* } */
 
 .container-green {
@@ -144,34 +251,39 @@ header>.logo-nav>.link-nav>.login-nav {
 }
 
 /* FOOTER  TOP*/
-.footer-top,.footer-bottom{
+.footer-top,
+.footer-bottom {
     background-color: black;
     padding: 5px 0;
     margin-bottom: 2px;
 }
-.f-pink{
+
+.f-pink {
     width: 100px;
     background-color: #FFC0CB;
     min-height: 100px;
     border-style: dotted;
 }
-.f-blu{
+
+.f-blu {
     width: 50px;
     background-color: #ADD8E6;
     min-height: 100px;
     border-style: dotted;
     /* gap: 1px; ??*/
 }
+
 /* FOOTER  BOTTOM*/
-.lightgreen{
-background-color: aquamarine;
-width: 300px;
-justify-content: space-between;
-padding: 10px 0;
+.lightgreen {
+    background-color: aquamarine;
+    width: 300px;
+    justify-content: space-between;
+    padding: 10px 0;
 }
 
 
-.f-logo, .f-buttom{
+.f-logo,
+.f-buttom {
     width: 50px;
     /* FINE THE BUG */
     border-style: dotted;
