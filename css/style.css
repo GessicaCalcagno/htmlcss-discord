@@ -202,18 +202,18 @@ h1,
 }
 
 .container-pink {
+    width: 40%;
+    min-height: 100px;
     /* THE BUG */
-    background-color: #FFC0CB;
-    width: 100px;
-    height: 100px;
+    background-color: #FFC0CB;    
     border-style: dotted;
 }
 
 .container-blue {
+    min-height: 100px;
+    width: 60%;
     /* THE BUG */
-    width: 200px;
-    background-color: #ADD8E6;
-    height: 100px;
+    background-color: #ADD8E6;    
     border-style: dotted;
 }
 
@@ -242,14 +242,28 @@ h1,
 /* THE BUG */
 /* height: 100px; */
 /* } */
-
+.wrapper-gray {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .container-green {
     /* THE BUG */
-    width: 220px;
+    width: 80%;
     min-height: 150px;
+    text-align: center;
     background-color: #196607;
+
 }
 
+
+.stars{
+    background-image: url(../img/stars.svg);
+    display: inline-block;
+    padding: 16px 50px 0;
+    background-size: 100%;
+    margin:30px 0;
+}
 /* FOOTER  TOP*/
 .footer-top,
 .footer-bottom {
