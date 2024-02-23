@@ -253,9 +253,10 @@ h1,
     min-height: 150px;
     text-align: center;
     background-color: #196607;
-
+    
 }
-
+/* display: flex;
+    flex-direction: column; */
 
 .stars{
     background-image: url(../img/stars.svg);
@@ -264,6 +265,19 @@ h1,
     background-size: 100%;
     margin:30px 0;
 }
+
+.bt-mac{
+    background-color:#8096DE ;
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.bt-mac a{
+    text-decoration: none;
+    color: white;
+}
+
 /* FOOTER  TOP*/
 .footer-top,
 .footer-bottom {
@@ -271,16 +285,20 @@ h1,
     padding: 5px 0;
     margin-bottom: 2px;
 }
+.wrapper,
+.f-top{
+    padding: 20px;
+}
 
 .f-pink {
-    width: 100px;
+    width: 40%;
     background-color: #FFC0CB;
     min-height: 100px;
     border-style: dotted;
 }
 
 .f-blu {
-    width: 50px;
+    width: 15%;
     background-color: #ADD8E6;
     min-height: 100px;
     border-style: dotted;
@@ -290,7 +308,7 @@ h1,
 /* FOOTER  BOTTOM*/
 .lightgreen {
     background-color: aquamarine;
-    width: 300px;
+    width: 60%;
     justify-content: space-between;
     padding: 10px 0;
 }
@@ -298,7 +316,7 @@ h1,
 
 .f-logo,
 .f-buttom {
-    width: 50px;
+    width: 20%;
     /* FINE THE BUG */
     border-style: dotted;
     background-color: #FFC0CB;
