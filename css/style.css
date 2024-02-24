@@ -3,14 +3,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 body {
     font-size: 14px;
-    font-family: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Whitney', "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-
 
 img {
     max-width: 100%;
@@ -23,15 +21,10 @@ header {
     min-height: 10px;
     line-height: 20px;
     background-color: #255EE9;
+    padding-top: 8px;
 }
 
-/* THE BUG */
-/*  padding: 5px 20px; */
-
-/* align-items: center;
-    justify-content: center;
-    text-align: center;
-    è bastato mettere MARGIN 0 AUTO che ha centrato tutto*/
+/*  è bastato mettere MARGIN 0 AUTO che ha centrato tutto*/
 .logo-hed,
 .button-hed {
     width: 20%;
@@ -52,47 +45,15 @@ ul {
     line-height: 30px;
 }
 
-
-
 header .container>* {
-    border: 2px ;
-    /* THE BUG */
+    border: 2px;
     /* solid darkblue */
 }
 
-
-/* .nav .container {
-    width: 80%;
-    max-width: 1100px;
-    margin: 0 auto; */
-/* è bastato mettere MARGIN 0 AUTO che ha centrato tutto */
-
-/* display: flex;
-    background-color: #DAA520; */
-/* THE BUG */
-/* width: 70%;
-    text-align: center; */
-
-
 header>.logo-hed>.link-nav>.login-nav {
-    /* border-style: dotted; */
     font-size: 5px;
     padding: 5px;
-
-}
-
-.logo-nav,
-.login-nav {
-    /* THE BUG */
-    width: 50px;
-    /* FINE THE BUG */
-    border-style: dotted;
-}
-
-.link-nav {
-    border-style: dotted;
-    /* THE BUG */
-    /* width: 200px; */
+    /* border-style: dotted; */
 }
 
 .wht,
@@ -104,19 +65,15 @@ li>a {
 
 .button-hed {
     text-align: right;
-
 }
 
 .bt-hed {
     background-color: white;
     color: #255EE9;
-    /* border-radius: 5px;
-    padding: 3px; */
     padding: 10px;
     border: none;
     border-radius: 20px;
     margin-bottom: 20px;
-    
 }
 
 /* COMMON */
@@ -124,14 +81,13 @@ li>a {
     width: 80%;
     max-width: 1100px;
     margin: 0 auto;
-    /* THE BUG */
-    /* min-height: 10px; */
-    /* dashed black */
-    border: 2px ;
+    border: 2px;
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 10px;
+    /* min-height: 10px; */
+    /* dashed black */
 }
 
 /* padding: 50px 0;--> NEL CASO NON AVESSI MESSO MIN-HEIGHT */
@@ -152,7 +108,6 @@ li>a {
     background-repeat: no-repeat;
     padding: 200px 20px 10px 20px;
     min-width: 200px;
-
 }
 
 .hr-nav {
@@ -160,13 +115,12 @@ li>a {
     align-items: center;
     justify-content: center;
     margin-bottom: 70px;
-    /* THE BUG */
-    /* min-height: 100px; */
     width: 50%;
+    /* min-height: 100px; */
     /* margin: 100px 20px 0 20px; */
 }
 
-h1{
+h1 {
     font-size: 2.5em;
 }
 
@@ -176,7 +130,8 @@ h1,
     margin-bottom: 20px;
 }
 
-.b-herwht, .b-sfblack{
+.b-herwht,
+.b-sfblack {
     /* color: inherit; */
     text-decoration: none;
     margin-top: 3px;
@@ -186,31 +141,21 @@ h1,
     margin-bottom: 20px;
 }
 
-
-.b-sfblack{
+.b-sfblack {
     background-color: black;
     color: white;
 }
-.b-herwht{
+
+.b-herwht {
     background-color: white;
     color: black;
-    
 }
-/* .container-pinkk {
-    
-    width: 50%;
-    min-height: 100px;
-    margin: 600px 40px;
-} */
 
 /* FINE CANTAINER ROSA */
 
 /* <!-- CONTAINER A 2 BLOCCHI SFONDO BIANCO +BLU --> */
-
-
 .wrapper {
     display: flex;
-    /* align-items: center; */
     justify-content: center;
     margin: 0 auto;
     padding: 20px 20px;
@@ -219,48 +164,49 @@ h1,
 .container-pink {
     width: 40%;
     min-height: 100px;
-    /* THE BUG */
-    /* background-color: #FFC0CB;     */
+    padding: 40px 20px;
+    /* background-color: #FFC0CB; */
     /* border-style: dotted; */
 }
 
 .container-blue {
     min-height: 100px;
     width: 60%;
-    /* THE BUG */
     /* background-color: #ADD8E6;     */
     /* border-style: dotted; */
 }
-h2{
+
+h2 {
     font-size: 2em;
     margin-bottom: 20px;
     margin-left: 3px;
 }
-.centre-green{
+
+.centre-green {
     padding-top: 20px;
     font-size: 2.5em;
 }
+
 /* IMMAGINE GRANDE SOTTO */
-.centre{
+.centre {
     text-align: center;
 }
-.centre-pg{
+
+.centre-pg {
     padding: 0 200px;
 }
-p{
+
+p {
     font-size: 1.2em;
     margin-left: 3px;
 }
 
 /* <!-- CONTAINER A 2 BLOCCHI SFONDO GRIGIO --> */
-
 .blockrgray {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* THE BUG */
     min-height: 200px;
-    /* THE BUG */
     background-color: #F6F6F6;
 }
 
@@ -269,51 +215,40 @@ p{
 }
 
 /* <!-- CONTENITORE VERDE CON SFONDO GRIGIO --> */
-
-/* .wrappergray{
-    display: flex;
-    align-items: center;
-    justify-content: center; */
-/* THE BUG */
-/* height: 100px; */
-/* } */
 .wrapper-gray {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .container-green {
-    /* THE BUG */
     width: 80%;
     min-height: 150px;
     text-align: center;
     /* background-color: #196607; */
-    /* padding-bottom: 100px; */
-    
 }
-/* display: flex;
-    flex-direction: column; */
-    section .centre{
-        text-align: center;
-        
-    }
 
-.stars{
+section .centre {
+    text-align: center;
+}
+
+.stars {
     background-image: url(../img/stars.svg);
     display: inline-block;
     padding: 16px 50px 0;
     background-size: 100%;
-    margin:30px 0;
+    margin: 30px 0;
 }
 
-.bt-mac{
-    background-color:#8096DE ;
+.bt-mac {
+    background-color: #8096DE;
     padding: 15px;
     border: none;
     border-radius: 20px;
     margin-bottom: 20px;
 }
-.bt-mac a{
+
+.bt-mac a {
     text-decoration: none;
     color: white;
 }
@@ -326,75 +261,73 @@ p{
     margin-bottom: 2px;
 }
 
-.f-top{
+.f-top {
     padding: 20px 230px;
 }
 
 .f-pink {
     width: 40%;
-    /* background-color: #FFC0CB; */
     min-height: 100px;
     border-style: dotted;
     margin-top: 5px;
+    /* background-color: #FFC0CB; */
 }
 
 .f-blu {
     width: 15%;
-    /* background-color: #ADD8E6; */
     min-height: 100px;
     border-style: dotted;
     margin-top: 5px;
-    /* gap: 1px; ??*/
+    /* background-color: #ADD8E6; */
 }
 
 /* FOOTER  BOTTOM*/
 .lightgreen {
-    /* background-color: aquamarine; */
     width: 100%;
     justify-content: space-between;
     padding: 10px 220px;
+    /* background-color: aquamarine; */
 }
 
-.img-ita{
-    height: 12px;  
-    
+.img-ita {
+    height: 12px;
 }
 
-.fa-brands{
+.fa-brands {
     margin: 5px 5px 0 0;
     color: white;
 }
+
 .p-ita {
     color: white;
-    
 }
 
-.color-lil{
+.color-lil {
     color: #8096DE;
 }
 
-.bold{
+.bold {
     font-weight: bold;
 }
-
 
 .f-logo,
 .f-buttom {
     width: 20%;
-    /* FINE THE BUG */
-    border-style: dotted;
+    margin: 5px 12px 5px 12px;
+    /* border-style: dotted; */
     /* background-color: #FFC0CB; */
-    margin: 5px 12px 5px 12px ;
 }
 
 .f-buttom,
-.f-right{
+.f-right {
     text-align: right;
 }
-h4{
+
+h4 {
     color: #8096DE;
     font-size: 2em;
 }
-.li-f{
+
+.li-f {
     margin-bottom: 10px;
 }
