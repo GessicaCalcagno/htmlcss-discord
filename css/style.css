@@ -201,6 +201,22 @@ p {
     margin-left: 3px;
 }
 
+/* ONDE */
+.wave{
+    display: flex;
+    color: #F6F6F6;
+    width: 100%;
+}
+.waves-gray{
+    color: #F6F6F6;
+    filter: invert(1) saturate(1) brightness(0.97);
+    width: 100%;
+}
+.revers{
+    display: flex;
+    transform: rotate(180deg);
+}
+
 /* <!-- CONTAINER A 2 BLOCCHI SFONDO GRIGIO --> */
 .blockrgray {
     display: flex;
