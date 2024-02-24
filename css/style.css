@@ -55,7 +55,9 @@ ul {
 
 
 header .container>* {
-    border: 2px solid darkblue;
+    border: 2px ;
+    /* THE BUG */
+    /* solid darkblue */
 }
 
 
@@ -73,7 +75,7 @@ header .container>* {
 
 
 header>.logo-hed>.link-nav>.login-nav {
-    border-style: dotted;
+    /* border-style: dotted; */
     font-size: 5px;
     padding: 5px;
 
@@ -108,8 +110,13 @@ li>a {
 .bt-hed {
     background-color: white;
     color: #255EE9;
-    border-radius: 5px;
-    padding: 3px;
+    /* border-radius: 5px;
+    padding: 3px; */
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    
 }
 
 /* COMMON */
@@ -119,7 +126,8 @@ li>a {
     margin: 0 auto;
     /* THE BUG */
     /* min-height: 10px; */
-    border: 2px dashed black;
+    /* dashed black */
+    border: 2px ;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -158,18 +166,24 @@ li>a {
     /* margin: 100px 20px 0 20px; */
 }
 
+h1{
+    font-size: 2.5em;
+}
+
 h1,
 .p-nav {
     color: white;
-    margin-bottom: 6px;
+    margin-bottom: 20px;
 }
 
 .b-herwht, .b-sfblack{
-    color: inherit;
+    /* color: inherit; */
     text-decoration: none;
-    border-radius: 10px;
-    padding: 5px;
     margin-top: 3px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 20px;
 }
 
 
@@ -196,25 +210,46 @@ h1,
 
 .wrapper {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     margin: 0 auto;
+    padding: 20px 20px;
 }
 
 .container-pink {
     width: 40%;
     min-height: 100px;
     /* THE BUG */
-    background-color: #FFC0CB;    
-    border-style: dotted;
+    /* background-color: #FFC0CB;     */
+    /* border-style: dotted; */
 }
 
 .container-blue {
     min-height: 100px;
     width: 60%;
     /* THE BUG */
-    background-color: #ADD8E6;    
-    border-style: dotted;
+    /* background-color: #ADD8E6;     */
+    /* border-style: dotted; */
+}
+h2{
+    font-size: 2em;
+    margin-bottom: 20px;
+    margin-left: 3px;
+}
+.centre-green{
+    padding-top: 20px;
+    font-size: 2.5em;
+}
+/* IMMAGINE GRANDE SOTTO */
+.centre{
+    text-align: center;
+}
+.centre-pg{
+    padding: 0 200px;
+}
+p{
+    font-size: 1.2em;
+    margin-left: 3px;
 }
 
 /* <!-- CONTAINER A 2 BLOCCHI SFONDO GRIGIO --> */
@@ -226,7 +261,7 @@ h1,
     /* THE BUG */
     min-height: 200px;
     /* THE BUG */
-    background-color: gray;
+    background-color: #F6F6F6;
 }
 
 .revs {
@@ -252,11 +287,16 @@ h1,
     width: 80%;
     min-height: 150px;
     text-align: center;
-    background-color: #196607;
+    /* background-color: #196607; */
+    /* padding-bottom: 100px; */
     
 }
 /* display: flex;
     flex-direction: column; */
+    section .centre{
+        text-align: center;
+        
+    }
 
 .stars{
     background-image: url(../img/stars.svg);
@@ -285,32 +325,56 @@ h1,
     padding: 5px 0;
     margin-bottom: 2px;
 }
-.wrapper,
+
 .f-top{
-    padding: 20px;
+    padding: 20px 230px;
 }
 
 .f-pink {
     width: 40%;
-    background-color: #FFC0CB;
+    /* background-color: #FFC0CB; */
     min-height: 100px;
     border-style: dotted;
+    margin-top: 5px;
 }
 
 .f-blu {
     width: 15%;
-    background-color: #ADD8E6;
+    /* background-color: #ADD8E6; */
     min-height: 100px;
     border-style: dotted;
+    margin-top: 5px;
     /* gap: 1px; ??*/
 }
 
 /* FOOTER  BOTTOM*/
 .lightgreen {
-    background-color: aquamarine;
-    width: 60%;
+    /* background-color: aquamarine; */
+    width: 100%;
     justify-content: space-between;
-    padding: 10px 0;
+    padding: 10px 220px;
+}
+
+.img-ita{
+    height: 12px;  
+    
+}
+
+.fa-brands{
+    margin: 5px 5px 0 0;
+    color: white;
+}
+.p-ita {
+    color: white;
+    
+}
+
+.color-lil{
+    color: #8096DE;
+}
+
+.bold{
+    font-weight: bold;
 }
 
 
@@ -319,5 +383,18 @@ h1,
     width: 20%;
     /* FINE THE BUG */
     border-style: dotted;
-    background-color: #FFC0CB;
+    /* background-color: #FFC0CB; */
+    margin: 5px 12px 5px 12px ;
+}
+
+.f-buttom,
+.f-right{
+    text-align: right;
+}
+h4{
+    color: #8096DE;
+    font-size: 2em;
+}
+.li-f{
+    margin-bottom: 10px;
 }
