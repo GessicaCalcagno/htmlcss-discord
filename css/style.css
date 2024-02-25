@@ -151,7 +151,7 @@ h1,
     color: black;
 }
 
-/* FINE CANTAINER ROSA */
+/* FINE HERO/JUMPTRON */
 
 /* <!-- CONTAINER A 2 BLOCCHI SFONDO BIANCO +BLU --> */
 .wrapper {
@@ -172,7 +172,7 @@ h1,
 .container-blue {
     min-height: 100px;
     width: 60%;
-    /* background-color: #ADD8E6;     */
+    /* background-color: #ADD8E6;*/
     /* border-style: dotted; */
 }
 
@@ -204,12 +204,11 @@ p {
 /* ONDE */
 .wave{
     display: flex;
-    color: #F6F6F6;
+    /* color: #F6F6F6; */
     width: 100%;
 }
 .waves-gray{
-    color: #F6F6F6;
-    filter: invert(1) saturate(1) brightness(0.97);
+    filter: invert(1) brightness(0.97); /* saturate(1) */
     width: 100%;
 }
 .revers{
