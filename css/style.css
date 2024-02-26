@@ -7,11 +7,15 @@
 
 body {
     font-size: 14px;
-    font-family: 'Whitney', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 img {
     max-width: 100%;
+}
+/* PER ALLINEARE IL LOGO AL CENTRO DEL TESTO */
+.logo-hed img{
+    vertical-align: middle;
 }
 
 /* HEADER */
@@ -19,21 +23,25 @@ header {
     display: flex;
     align-items: center;
     min-height: 10px;
-    line-height: 20px;
+    /* line-height: 20px; NON SERVE SE METTO IL FLEX */
     background-color: #255EE9;
     padding-top: 8px;
 }
 
 /*  è bastato mettere MARGIN 0 AUTO che ha centrato tutto*/
+
 .logo-hed,
 .button-hed {
     width: 20%;
+    display: inline-block;
+    /* INLINE-BLOCK SERVE A NON FARE SOVRAPPORRE E SPEZZARE I BOTTONI perchè sono 'elementi inline' */
 }
+
 
 .menu-hed ul {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
 }
 
 ul {
@@ -139,6 +147,7 @@ h1,
     border: none;
     border-radius: 20px;
     margin-bottom: 20px;
+    display: inline-block;
 }
 
 .b-sfblack {
@@ -261,6 +270,7 @@ section .centre {
     border: none;
     border-radius: 20px;
     margin-bottom: 20px;
+    /* display: inline-block; se avessi avuto più bottoni */
 }
 
 .bt-mac a {
@@ -308,11 +318,13 @@ section .centre {
     height: 12px;
 }
 
+/* ICONE */
 .fa-brands {
     margin: 5px 5px 0 0;
     color: white;
 }
 
+/* BANDIERA */
 .p-ita {
     color: white;
 }
